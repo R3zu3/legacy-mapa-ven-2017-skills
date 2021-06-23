@@ -1,0 +1,84 @@
+#particles-js{
+  height:100%;
+  width:100%;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0, 0);
+}
+
+#isolater {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0);
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+body {
+	background-image: url("BG.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center; 
+}
+
+#venlogo {
+	width: 45%;
+	background-image: url("images/venlsha.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#mapcontainer {
+	width: 100%;
+}
+
+@font-face {
+	font-family: nasa;
+    src: url('fonts/Nasalization.otf')
+}
+
+#stext{
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity 0.5s;
+	color: white;
+	font-family: nasa;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	margin: 0;
+}
+
+#clickmenu{
+	width: 100px;
+	background-color: white;
+	transition: opacity 0.5s;
+	opacity: 0;
+	position: absolute;
+	z-index: 1000;
+}
+
+#clickmenu > p{
+	vertical-align: middle;
+	color: blue;
+}
+
+.submenu > ul{
+	opacity: 0;
+}
+
+.submenu:hover > ul{
+	opacity: 1;
+}
+
+ul{
+	list-style-type: none;
+}
